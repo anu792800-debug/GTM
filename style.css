@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #f7f7f7;
+    --accent-color: #a0a0a0;
+    --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 15px;
+    font-size: 0.9em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+.icons i {
+    font-size: 1.1em;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 80px 0;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    color: var(--accent-color);
+    font-size: 1.1em;
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.hero button:hover {
+    opacity: 0.8;
+}
+
+/* Product Grid */
+.product-grid-container {
+    padding: 0 5%;
+}
+
+.product-grid-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.product-card p {
+    color: var(--accent-color);
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+.social-links i {
+    margin: 0 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: var(--accent-color);
+}
